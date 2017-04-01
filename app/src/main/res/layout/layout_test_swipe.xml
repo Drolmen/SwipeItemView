@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.drolmen.swipeitemdemo.views.SwipeItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--底层布局-->
+    <LinearLayout
+        android:id="@id/bottom_view"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:text="I am one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:text="I am two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!--顶部布局，必须设置不透明背景色遮盖下层View-->
+    <LinearLayout
+        android:id="@id/top_view"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:text="Hello world"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</com.drolmen.swipeitemdemo.views.SwipeItemView>
